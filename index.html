@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <title>Афродита</title>
 
+
+    <link rel="stylesheet" href="css/normalize.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=cyrillic" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700&amp;subset=cyrillic" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/normalize.css">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -17,31 +18,33 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container">
+        <div class="container clearfix">
             <div class="logo">
-                <p class="logo__text">АФРОДИТА</p>
+                <p class="logo__text">Афродита</p>
             </div>
             <div class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <img src="img/nav/main_icon.png" alt="Главная" class="nav__icon">
-                        <label for="" class="nav__item-tittle">Главная</label>
+                        <a href="" class="nav__link nav__link--main">Главная
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <img src="img/nav/feed_icon.png" alt="Отзывы" class="nav__icon">
-                        <label for="" class="nav__item-tittle">Отзывы</label>
+                        <a href="" class="nav__link nav__link--feed">Отзывы
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <img src="img/nav/service_icon.png" alt="Услуги" class="nav__icon">
-                        <label for="" class="nav__item-tittle">Услуги</label>
+                        <a href="" class="nav__link nav__link--service">Услуги
+                        </a>
                     </li>
                 </ul>
             </div>
-            <a href="tel:+78000039210" class="contacts__number-text">8 (800) 00-392-10</a>
-            <a href="" class="contacts__schedule-text contacts__schedule--hover">График работы</a>
+            <div class="contacts">
+                <a href="tel:+78000039210" class="contacts__number">8 (800) 00-392-10</a>
+                <button href="" class="contacts__schedule contacts__schedule--hover">График работы</button>
+            </div>
         </div>
     </header>
-    <!-- лого bkgrnd+особенности -->
+    <!-- banner+features -->
     <div class="banner">
         <div class="container">
             <div class="banner__item">
@@ -51,10 +54,9 @@
     </div>
     <div class="features">
         <div class="container">
-            <h2 class="features__name">Особенности</h2>
+            <h3 class="features__name">Особенности</h3>
             <ul class="features__list">
                 <li class="features__item">
-                    <img src="img/features/Ellipse.png" alt="Уникальность" class="features__item-background">
                     <img src="img/features/flower.png" alt="Уникальность" class="features__item-icon">
                     <span class="features__tittle">Уникальность</span>
                     <p class="features__text"> Мы делаем все, для вашего комфорта</p>
@@ -65,7 +67,6 @@
                     </ul>
                 </li>
                 <li class="features__item">
-                    <img src="img/features/Ellipse_copy.png" alt="Уникальность" class="features__item-background">
                     <img src="img/features/star.png" alt="Премиум-класс" class="features__item-icon">
                     <span class="features__tittle">Премиум-класс</span>
                     <p class="features__text"> Наш зал оборудован тренажёрами А-класса</p>
@@ -76,7 +77,6 @@
                     </ul>
                 </li>
                 <li class="features__item">
-                    <img src="img/features/Ellipse_copy_2.png" alt="Уникальность" class="features__item-background">
                     <img src="img/features/painter-palette.png" alt="Личный тренер" class="features__item-icon">
                     <span class="features__tittle">Личный тренер</span>
                     <p class="features__text"> Тренер сделает все для вашего результата</p>
@@ -91,11 +91,31 @@
     </div>
     <!-- последние новости         -->
     <div class="container">
-        <div class="article">
-            <h2 class="article__tittle">Последние новости</h2>
-            <div class="article__content">
+        <h2 class="last-news__tittle">Последние новости</h2>
+        <aside class="news">
+            <h4 class="news__caption">Топ новостей</h4>
+            <label for="" class="news__label news__label--color">За сентябрь</label>
+            <ul class="news__list">
+                <li class="news__trigger">
+                    <a href="" class="news__image news__image--one">
+                    </a>
+                </li>
+                <li class="news__trigger">
+                    <a href="" class="news__image news__image--two">
+                    </a>
+                </li>
+                <li class="news__trigger">
+                    <a href="" class="news__image news__image--three">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="last-news">
+        <div class="container clearfix">
+            <div class="article">
                 <ul class="article__list">
-                    <li class="article__item">
+                    <li class="article__item article__item-rect--one">
                         <article class="article__content">
                             <img src="img/article/Ellipse_1.png" alt="" class="article__icon">
                             <div class="article__block">
@@ -109,7 +129,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="article__item">
+                    <li class="article__item article__item-rect--two">
                         <article class="article__content">
                             <img src="img/article/Ellipse_2.png" alt="" class="article__icon">
                             <div class="article__block">
@@ -140,72 +160,49 @@
                 </ul>
             </div>
         </div>
-        <div class="news">
-            <aside class="news__item">
-                <h4 class="news__caption">Топ новостей</h4>
-                <label for="news__label">За сентябрь</label>
-                <ul class="news__list">
-                    <li class="news__trigger">
-                        <a href="" class="news__link">
-                            <img src="img/news/news1.png" alt="" class="news__image">
-                        </a>
-                    </li>
-                    <li class="news__trigger">
-                        <a href="" class="news__link">
-                            <img src="img/news/news2.png" alt="" class="news__image">
-                        </a>
-                    </li>
-                    <li class="news__trigger">
-                        <a href="" class="news__link">
-                            <img src="img/news/news3.png" alt="" class="news__image">
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        </div>
-        <div class="pag">
-            <span class="pag__tittle"> Страница 1 из 7</span>
-            <nav class="pag__numbers">
-                <ul class="pag__list">
-                    <li class="pag__item">
-                        <a href="#">&lt;</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">1</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">2</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">3</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">4</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">5</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">6</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">7</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#">&gt;</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
+
+    <!-- <div class="news"> -->
+
+    <!-- </div> -->
+    <nav class="pag">
+        <span class="pag__tittle"> Страница 1 из 7</span>
+        <a href="#" class="pag__btn pag__btn--prev pag__btn--disabled">
+            <</a>
+                <ul class="pag__list">
+                    <li class="pag__item pag__item--active">
+                        <a href="#" class="pag__link">1</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">2</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">3</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">4</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">5</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">6</a>
+                    </li>
+                    <li class="pag__item">
+                        <a href="#" class="pag__link">7</a>
+                    </li>
+                </ul>
+                <a href="#" class="pag__btn pag__btn--next pag__btn--active">
+            ></a>
+    </nav>
     <!-- футер         -->
     <footer class="footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="sign">
-                <p class="sign__text"> Сделано с любовью и старанием на курсе "HTML + CSS" в
-                    <a href="https://loftschool.com" class="sign__link">LoftSchool.</a>
+                <p class="copyright__text"> Сделано с любовью и старанием <br>на курсе "HTML + CSS" в
+                    <a href="https://loftschool.com" class="copyright__link" target="_blank">LoftSchool.</a><br>
                     Автор работы:
-                    <a href="https://github.com/imakskim" class="sign__author">Ким Максим</a>
+                    <a href="https://github.com/imakskim" class="copyright__author" target="_blank">Ким Максим</a>
                 </p>
             </div>
             <div class="logo">
@@ -215,19 +212,19 @@
                 <p class="social__tittle"> Наши социальные сети</p>
                 <ul class="social__list">
                     <li class="social__item">
-                        <img src="" alt="" class="social__icon">
+                        <a href="" class="social__link social__link--vk"></a>
                     </li>
                     <li class="social__item">
-                        <img src="" alt="" class="social__icon">
+                        <a href="" class="social__link social__link--fb"></a>
                     </li>
                     <li class="social__item">
-                        <img src="" alt="" class="social__icon">
+                        <a href="" class="social__link social__link--google"></a>
                     </li>
                     <li class="social__item">
-                        <img src="" alt="" class="social__icon">
+                        <a href="" class="social__link social__link--twitter"></a>
                     </li>
                     <li class="social__item">
-                        <img src="" alt="" class="social__icon">
+                        <a href="" class="social__link social__link--mail"></a>
                     </li>
                 </ul>
             </div>
