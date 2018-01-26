@@ -1,0 +1,139 @@
+.form__personal {
+    display: block;
+    width: 560px;
+    height: 240px;
+    background-color: bisque;
+}
+
+.form {
+    width: 700px;
+    height: 427px;
+    background-color: #f5f5f5;
+    padding: 40px 70px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 61px;
+    margin-bottom: 61px;
+}
+
+ .form__caption {
+     font-size: 49px;
+     font-weight: 700;
+     margin: 0;
+ }
+ .form__row {
+     margin-top: 20px;
+ }
+
+.form__input-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form__input-item:last-child {
+    margin-right: 0;
+}
+
+.form__tittle {
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form__input-field {
+    display: block;
+    width: 270px;
+    height: 45px;
+    border: 0;
+    border-radius: 3px; 
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.form__big-text {
+    width: 560px;
+    height: 90px;
+    border-radius: 3px;
+    resize: none;
+    border: 0;
+    font-size: 14px;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 10px
+}
+
+.form__controls {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form__buttons {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-right: 
+}
+
+.form__radio-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form__radio{
+    display: inline-block;
+}
+
+.form__radio:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+    left: -1.5px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: .5px solid #e7e7e7;
+    box-sizing: border-box;
+}
+
+.form__radio:checked:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+    left: -1.5px;
+    position: relative;
+    background-color: #f5f5f5;
+    content: '';
+    background-image: url(../../img/feedback/radio-button.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    visibility: visible;
+    border: 0;
+}
+
+.form__radio-tittle {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form__send-button {
+    border: 0;
+    width: 125px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1c1f1d;
+    font-family: opensans;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>Афродита</title>
 
+    <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=cyrillic" rel="stylesheet">
 
@@ -17,196 +19,214 @@
 
 <body>
     <!-- header -->
-    <header class="header">
-        <div class="container clearfix">
-            <div class="logo">
-                <p class="logo__text">Афродита</p>
-            </div>
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__link nav__link--main">Главная
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link nav__link--feed">Отзывы
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link nav__link--service">Услуги
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <a href="tel:+78000039210" class="contacts__number">8 (800) 00-392-10</a>
-                <button href="" class="contacts__schedule contacts__schedule--hover">График работы</button>
-            </div>
-        </div>
-    </header>
-    <!-- banner+features -->
-    <div class="banner">
-        <div class="container">
-            <div class="banner__item">
-                <img src="img/banner/banner.png" alt="Главная картинка" class="banner__picture">
-            </div>
-        </div>
-    </div>
-    <div class="features">
-        <div class="container">
-            <h3 class="features__name">Особенности</h3>
-            <ul class="features__list">
-                <li class="features__item">
-                    <img src="img/features/flower.png" alt="Уникальность" class="features__item-icon">
-                    <span class="features__tittle">Уникальность</span>
-                    <p class="features__text"> Мы делаем все, для вашего комфорта</p>
-                    <ul class="features__sublist">
-                        <li class="features__sublist-tittle">Питание включено</li>
-                        <li class="features__sublist-tittle">Багаж (5кг)</li>
-                        <li class="features__sublist-tittle">Душ/баня</li>
-                    </ul>
-                </li>
-                <li class="features__item">
-                    <img src="img/features/star.png" alt="Премиум-класс" class="features__item-icon">
-                    <span class="features__tittle">Премиум-класс</span>
-                    <p class="features__text"> Наш зал оборудован тренажёрами А-класса</p>
-                    <ul class="features__sublist">
-                        <li class="features__sublist-tittle">Качество</li>
-                        <li class="features__sublist-tittle">Продуктивность</li>
-                        <li class="features__sublist-tittle">Результат</li>
-                    </ul>
-                </li>
-                <li class="features__item">
-                    <img src="img/features/painter-palette.png" alt="Личный тренер" class="features__item-icon">
-                    <span class="features__tittle">Личный тренер</span>
-                    <p class="features__text"> Тренер сделает все для вашего результата</p>
-                    <ul class="features__sublist">
-                        <li class="features__sublist-tittle">Программа</li>
-                        <li class="features__sublist-tittle">Питание</li>
-                        <li class="features__sublist-tittle">План тренировок</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- последние новости         -->
-    <div class="container">
-        <h2 class="last-news__tittle">Последние новости</h2>
-        <aside class="news">
-            <h4 class="news__caption">Топ новостей</h4>
-            <label for="" class="news__label news__label--color">За сентябрь</label>
-            <ul class="news__list">
-                <li class="news__trigger">
-                    <a href="" class="news__image news__image--one">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container clearfix">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <p class="logo__text">Афродита</p>
                     </a>
-                </li>
-                <li class="news__trigger">
-                    <a href="" class="news__image news__image--two">
-                    </a>
-                </li>
-                <li class="news__trigger">
-                    <a href="" class="news__image news__image--three">
-                    </a>
-                </li>
-            </ul>
-        </aside>
-    </div>
-    <div class="last-news">
-        <div class="container clearfix">
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--main">
+                            <div class="nav__icon nav__icon--main"></div>
+                            <a href="index.html" class="nav__link">Главная
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--feed">
+                            <div class="nav__icon nav__icon--feed"></div>
+                            <a href="feedback.html" class="nav__link">Отзывы
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--service">
+                            <div class="nav__icon nav__icon--service"></div>
+                            <a href="services.html" class="nav__link">Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <a href="tel:+78000039210" class="contacts__number">8 (800) 00-392-10</a>
+                    <button href="" class="contacts__schedule contacts__schedule--hover">График работы
+                        <div class="dropdown">
+                            <div class="triangle"></div>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item dropdown__item--selected">пн-вс 09:00-20:00</li>
+                                <li class="dropdown__item">обед: 14:00-14:30</li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <!-- banner+features -->
+            <div class="banner">
+                <div class="container">
+                    <div class="banner__item">
+                        <img src="img/banner/banner.png" alt="Главная картинка" class="banner__picture">
+                    </div>
+                </div>
+            </div>
+            <div class="features">
+                <div class="container">
+                    <h3 class="features__name">Особенности</h3>
+                    <ul class="features__list">
+                        <li class="features__item">
+                            <img src="img/features/flower.png" alt="Уникальность" class="features__item-icon">
+                            <span class="features__tittle">Уникальность</span>
+                            <p class="features__text"> Мы делаем все, для вашего комфорта</p>
+                            <ul class="features__sublist">
+                                <li class="features__sublist-tittle">Питание включено</li>
+                                <li class="features__sublist-tittle">Багаж (5кг)</li>
+                                <li class="features__sublist-tittle">Душ/баня</li>
+                            </ul>
+                        </li>
+                        <li class="features__item">
+                            <img src="img/features/star.png" alt="Премиум-класс" class="features__item-icon">
+                            <span class="features__tittle">Премиум-класс</span>
+                            <p class="features__text"> Наш зал оборудован тренажёрами А-класса</p>
+                            <ul class="features__sublist">
+                                <li class="features__sublist-tittle">Качество</li>
+                                <li class="features__sublist-tittle">Продуктивность</li>
+                                <li class="features__sublist-tittle">Результат</li>
+                            </ul>
+                        </li>
+                        <li class="features__item">
+                            <img src="img/features/painter-palette.png" alt="Личный тренер" class="features__item-icon">
+                            <span class="features__tittle">Личный тренер</span>
+                            <p class="features__text"> Тренер сделает все для вашего результата</p>
+                            <ul class="features__sublist">
+                                <li class="features__sublist-tittle">Программа</li>
+                                <li class="features__sublist-tittle">Питание</li>
+                                <li class="features__sublist-tittle">План тренировок</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- последние новости         -->
+            <div class="news">
+                <div class="container">
+                    <h3 class="caption">Последние новости</h3>
+                    <aside class="news__block">
+                        <h4 class="news__caption">Топ новостей</h4>
+                        <label for="" class="news__label news__label--color">За сентябрь</label>
+                        <ul class="news__list">
+                            <li class="news__trigger">
+                                <a href="" class="news__image news__image--one">
+                                </a>
+                            </li>
+                            <li class="news__trigger">
+                                <a href="" class="news__image news__image--two">
+                                </a>
+                            </li>
+                            <li class="news__trigger">
+                                <a href="" class="news__image news__image--three">
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
             <div class="article">
-                <ul class="article__list">
-                    <li class="article__item article__item-rect--one">
-                        <article class="article__content">
-                            <img src="img/article/Ellipse_1.png" alt="" class="article__icon">
-                            <div class="article__block">
-                                <span class="article__date">12.10.2016</span>
-                                <h4 class="article__caption">Похудение с помощью бодибилдинга!</h4>
-                                <p class="article__text">
-                                    Вдыхание одного литра кислорода эквивалентно "сжиганию" 5 калорий, однако в минуту при самом высоком темпе движений атлет
-                                    способен вдохнуть не более 3-4 литров кислорода. Это крайне вадно лоя кадлого начинающего
-                                    атлета
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="article__item article__item-rect--two">
-                        <article class="article__content">
-                            <img src="img/article/Ellipse_2.png" alt="" class="article__icon">
-                            <div class="article__block">
-                                <span class="article__date">01.02.2016</span>
-                                <h4 class="article__caption">Заражай друзей, получай призы!</h4>
-                                <p class="article__text">
-                                    Дополнительео для Вас: пользование сауной и предоставление средств личной гигиены, пользование баром, таблица размеров, дружеская
-                                    атмосфера и постоянная поддердка. Мы заботимся о вашем комфорте и предлагаем испытать
-                                    это уже сегодня!
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="article__item">
-                        <article class="article__content">
-                            <img src="img/article/Ellipse_3.png" alt="" class="article__icon">
-                            <div class="article__block">
-                                <span class="article__date">22.12.2015</span>
-                                <h4 class="article__caption">Фрилансер? Выпрями спину!</h4>
-                                <p class="article__text">
-                                    Создайте рабочее место под себя. Вот этот инструмент поможет опеределить, что подходит вам и вашему организму. Используйте
-                                    специальную подставку для ноубука, если вы проводите ща ним больше 2 часов. Настройте
-                                    высоту и яркость мониторов
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+                <div class="container clearfix">
+                    <ul class="article__list">
+                        <li class="article__item article__item-rect--one">
+                            <article class="article__content">
+                                <img src="img/article/Ellipse_1.png" alt="" class="article__icon">
+                                <div class="article__block">
+                                    <span class="article__date">12.10.2016</span>
+                                    <h4 class="article__caption">Похудение с помощью бодибилдинга!</h4>
+                                    <p class="article__text">
+                                        Вдыхание одного литра кислорода эквивалентно "сжиганию" 5 калорий, однако в минуту при самом высоком темпе движений атлет
+                                        способен вдохнуть не более 3-4 литров кислорода. Это крайне вадно лоя кадлого начинающего
+                                        атлета
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article__item article__item-rect--two">
+                            <article class="article__content">
+                                <img src="img/article/Ellipse_2.png" alt="" class="article__icon">
+                                <div class="article__block">
+                                    <span class="article__date">01.02.2016</span>
+                                    <h4 class="article__caption">Заражай друзей, получай призы!</h4>
+                                    <p class="article__text">
+                                        Дополнительео для Вас: пользование сауной и предоставление средств личной гигиены, пользование баром, таблица размеров, дружеская
+                                        атмосфера и постоянная поддердка. Мы заботимся о вашем комфорте и предлагаем испытать
+                                        это уже сегодня!
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article__item">
+                            <article class="article__content">
+                                <img src="img/article/Ellipse_3.png" alt="" class="article__icon">
+                                <div class="article__block">
+                                    <span class="article__date">22.12.2015</span>
+                                    <h4 class="article__caption">Фрилансер? Выпрями спину!</h4>
+                                    <p class="article__text">
+                                        Создайте рабочее место под себя. Вот этот инструмент поможет опеределить, что подходит вам и вашему организму. Используйте
+                                        специальную подставку для ноубука, если вы проводите ща ним больше 2 часов. Настройте
+                                        высоту и яркость мониторов
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            <nav class="pag">
+                <span class="pag__tittle"> Страница 1 из 7</span>
+                <a href="#" class="pag__btn pag__btn--prev pag__btn--disabled">
+                    <</a>
+                        <ul class="pag__list">
+                            <li class="pag__item pag__item--active">
+                                <a href="#" class="pag__link">1</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">2</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">3</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">4</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">5</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">6</a>
+                            </li>
+                            <li class="pag__item">
+                                <a href="#" class="pag__link">7</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="pag__btn pag__btn--next pag__btn--active">
+                            ></a>
+            </nav>
         </div>
     </div>
-
-    <!-- <div class="news"> -->
-
-    <!-- </div> -->
-    <nav class="pag">
-        <span class="pag__tittle"> Страница 1 из 7</span>
-        <a href="#" class="pag__btn pag__btn--prev pag__btn--disabled">
-            <</a>
-                <ul class="pag__list">
-                    <li class="pag__item pag__item--active">
-                        <a href="#" class="pag__link">1</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">2</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">3</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">4</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">5</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">6</a>
-                    </li>
-                    <li class="pag__item">
-                        <a href="#" class="pag__link">7</a>
-                    </li>
-                </ul>
-                <a href="#" class="pag__btn pag__btn--next pag__btn--active">
-            ></a>
-    </nav>
     <!-- футер         -->
     <footer class="footer">
         <div class="container clearfix">
-            <div class="sign">
-                <p class="copyright__text"> Сделано с любовью и старанием <br>на курсе "HTML + CSS" в
-                    <a href="https://loftschool.com" class="copyright__link" target="_blank">LoftSchool.</a><br>
-                    Автор работы:
+            <div class="copyright">
+                <p class="copyright__text"> Сделано с любовью и старанием
+                    <br>на курсе "HTML + CSS" в
+                    <a href="https://loftschool.com" class="copyright__link" target="_blank">LoftSchool.</a>
+                    <br> Автор работы:
                     <a href="https://github.com/imakskim" class="copyright__author" target="_blank">Ким Максим</a>
                 </p>
             </div>
             <div class="logo">
-                <p class="logo__text">АФРОДИТА</p>
+                <a href="index.html" class="logo__link">
+                    <p class="logo__text">Афродита</p>
+                </a>
             </div>
             <div class="social">
                 <p class="social__tittle"> Наши социальные сети</p>

@@ -1,0 +1,73 @@
+.services__layout {
+    position: relative;
+    width: 250px;
+    height: 153px;
+    border-radius: 5px;
+    background-size: 250px 153px;
+    background-position: center;
+    transition: .3s;
+}
+
+.services__block {
+    width: 250px;
+    overflow: hidden;
+}
+
+.services__tittle {
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.services__layout--fit {
+    background-image: url(../../img/services/fitness.png);
+}
+
+.services__img {
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    opacity: .6;
+    transition: .3s;
+}
+
+.services__block--fit:hover .services__tittle--fit {
+    font-size: 20px;
+}
+
+.services__block--fit:hover .services__img--fit {
+    top: -155px;
+}
+
+.services__block--fit:hover .services__layout--fit {
+   background-size: 260px 160px;
+}
+
+
+.services__layout--diet {
+    background-image: url(../../img/services/diet.png);
+}
+
+.services__img--diet{
+    opacity: .5;
+    transition: .3s;
+}
+
+.services__block--diet:hover .services__tittle--diet {
+    font-size: 20px;
+}
+
+.services__block--diet:hover .services__img--diet {
+    top: -155px;
+}
+
+.services__block--diet:hover .services__layout--diet {
+    background-size: 260px 160px;
+ }

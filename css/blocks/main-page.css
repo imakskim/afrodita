@@ -1,0 +1,266 @@
+.banner__item {
+    background: #ffffff;
+    text-align: center;
+    margin-top: 79px;
+    padding-bottom: 12px;
+}
+
+.features {
+    background-color: #131415;
+}
+
+.features__name {
+    font-weight: 700;
+    font-size: 49px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 5px;
+}
+
+.features__tittle {
+    display: block;
+    font-size: 10,78px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: 33px;
+}
+
+.features__list {
+    text-align: center;
+}
+
+.features__item {
+    display: inline-block;
+    width: 262px;
+    text-align: center;
+    padding-bottom: 92px;
+}
+
+.features__text {
+    font-size: 18px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin-top: 24px;
+    line-height: 1.5;
+}
+
+.features__sublist-tittle {
+    text-align: left;
+    margin-left: 56px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    list-style: disc;
+}
+
+.caption {
+    font-size: 49px;
+    color: #221f1f;
+    text-transform: uppercase;
+    margin-top: 57px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.article {
+    margin-left: 20px;
+}
+
+.article__icon {
+    width: 160px;
+    height: 160px;
+}
+
+.article__block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 14px;
+}
+
+.article__date {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #999999;
+    font-weight: 300;
+    display: block;
+    line-height: .9;
+}
+
+.article__caption {
+    font-family: Roboto;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.article__text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    width: 700px;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: block;
+}
+
+.article__item {
+    margin-bottom: 28px;
+}
+
+.article__item-rect--one:after {
+    content: '';
+    width: 832px;
+    height: 2px;
+    background-image: url(../../img/article/rectangle-article.png);
+    display: block;
+    margin-top: 26px;
+}
+
+.article__item-rect--two:after {
+    content: '';
+    width: 832px;
+    height: 2px;
+    background-image: url(../../img/article/rectangle-article.png);
+    display: block;
+    margin-top: 13px;
+}
+
+.news__block {
+    float: right;
+    margin-right: 20px;
+    width: 160px;
+}
+
+
+.news__caption, .news__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #221f1f;
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 2.4px;
+}
+
+.news__label {
+    display: block;
+    margin-top: 13px;
+    color: #656464;
+}
+
+.news__list {
+    margin-top: 20px;
+}
+
+.news__trigger {
+    margin-bottom: 17px;
+}
+
+.news__image {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 121px;
+    opacity: .7;
+}
+
+.news__image:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.news__image--one {
+    background-image: url(../../img/news/news1.png);
+}
+
+.news__image--two {
+    background-image: url(../../img/news/news2.png);
+    height: 160px;
+}
+
+.news__image--three {
+    background-image: url(../../img/news/news3.png);
+    height: 159px;
+}
+
+
+.pag {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #656464;
+    margin-bottom: 67px;
+}
+
+.pag__tittle {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 15px;
+    color: #656464;
+    vertical-align: center;
+}
+
+.pag__btn {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #221f1f;
+    font-size: 18px;
+}
+
+.pag__btn--prev {
+    margin-right: 8px;
+}
+
+.pag__btn--next {
+    margin-left: 8px;
+}
+
+.pag__btn--disabled {
+    color: #bebdbd;
+}
+
+.pag__list {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.pag__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.pag__link {
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #221f1f;
+    vertical-align: middle;
+}
+
+.pag__link:hover {
+    color: #ffffff;
+    background-color: #27273e;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.pag__item--active .pag__link{
+    color: #ffffff;
+    background-color: #27273e;
+    border-radius: 3px;
+}
+
+
+

@@ -1,0 +1,124 @@
+.header {
+    background: #000000;
+    position: relative;
+}
+
+.nav, .logo, .nav__item, .contacts {
+    display: inline-block;
+}
+
+.nav {
+    width: 380px;
+    float: left;
+}
+
+.logo, .contacts {
+    width: 360px;
+    float: left;
+}
+
+.contacts {
+    text-align: right;
+    margin-bottom: 9px;
+}
+ 
+.contacts__number, .contacts__schedule {
+    display: block;
+    margin-right: 20px;
+}
+
+
+.logo__link {
+    text-decoration: none;
+}
+
+.logo__text {
+    font-family: 'gora_free';
+    font-size: 18px;
+    font-weight: 300;
+    color: #f89513;
+    margin-top: 26px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.nav {
+    margin-top: 28px;
+}
+
+.nav__item {
+    text-transform: uppercase;
+ }
+
+ .nav__item:hover .nav__link {
+     color: #f89513;
+ }
+
+.nav__link {
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 12px;
+     color: #ffffff;
+    }
+
+.nav__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/nav/nav_sprite.png) no-repeat;
+    margin-right: 15px;
+}
+
+.nav__icon--main {
+    background-position: -40px 0;
+}
+
+.nav__item--main:hover .nav__icon--main {
+    background-position: -40px bottom;
+}
+
+.nav__icon--feed {
+    background-position: 0 0;
+}
+
+.nav__item--feed:hover .nav__icon--feed {
+    background-position: 0 bottom;
+}
+
+.nav__icon--service {
+    background-position: -80px 0;
+}
+
+.nav__item--service:hover .nav__icon--service {
+    background-position: -80px bottom;
+}
+
+.nav__item {
+    margin-left: 28px;
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+.contacts__number {
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+.contacts__schedule {
+    font-family: Opensans;
+    font-weight: bold;
+    font-size: 14px;
+    color: #b46f14;
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid;
+    float: right;
+}

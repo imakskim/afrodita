@@ -1,0 +1,109 @@
+.footer {
+    background: #000000;
+    min-width: 1140px;
+    margin-top: -76px;
+} 
+
+.social{
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .logo {
+    text-align: right;
+    margin-left: 5px;
+}
+
+.copyright {
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.copyright__text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.copyright__link {
+    font-weight: 700;
+    color: #ffffff;
+    
+}
+
+.copyright__author {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social__tittle {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.social__item {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.social__link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social__link--vk {
+    content: "";
+    border-radius: 50%;
+    background-image: url(../../img/social/vk.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-color:  #d0d0d0;
+}
+
+.social__link--fb {
+    content: "";
+    border-radius: 50%;
+    background-image: url(../../img/social/fb.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-color:  #d0d0d0;
+}
+
+.social__link--google {
+    content: "";
+    border-radius: 50%;
+    background-image: url(../../img/social/google.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-color:  #d0d0d0;
+}
+
+.social__link--twitter {
+    content: "";
+    border-radius: 50%;
+    background-image: url(../../img/social/twitter.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-color:  #d0d0d0;
+}
+
+.social__link--mail {
+    content: "";
+    border-radius: 50%;
+    background-image: url(../../img/social/mail.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-color:  #d0d0d0;
+}
+
+.social__link:hover {
+    background-color: #f6942c;
+    transition: .3s;
+}
